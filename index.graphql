@@ -1,3 +1,3 @@
-schema @sdl(files: ["schema/cart.graphql"]) {
+schema @sdl(files: ["schema/ecommerce.graphql"]) {
   query: Query
 }

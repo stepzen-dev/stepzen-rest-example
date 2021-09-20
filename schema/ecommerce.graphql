@@ -1,0 +1,47 @@
+type Product {
+  id: ID!
+  name: String
+  price: Float
+  thumbnail: String
+  category: [Category]
+    @materializer(
+      query: "getProductCategories"
+      arguments: [{ name: "productId", field: "id" }]
+    )
+  rating: Rating
+    @materializer(
+      query: "getProductRating"
+      arguments: [{ name: "productId", field: "id" }]
+    )
+}
+
+type Category {
+  id: ID!
+  name: ID
+}
+
+type Rating {
+  id: ID!
+  productId: ID!
+  count: Float
+  average: Float
+}
+
+type Query {
+  getProducts: [Product]
+    @rest(
+      endpoint: "https://my-json-server.typicode.com/stepzen-samples/stepzen-rest-example/products"
+    )
+  getProduct(id: ID!): Product
+    @rest(
+      endpoint: "https://my-json-server.typicode.com/stepzen-samples/stepzen-rest-example/products/$id"
+    )
+  getProductRating(productId: ID!): Rating
+    @rest(
+      endpoint: "https://my-json-server.typicode.com/stepzen-samples/stepzen-rest-example/products/$productId/rating"
+    )
+  getProductCategories(productId: ID!): [Category]
+    @rest(
+      endpoint: "https://my-json-server.typicode.com/stepzen-samples/stepzen-rest-example/products/$productId/categories"
+    )
+}
