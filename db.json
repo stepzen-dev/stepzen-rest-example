@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "White T-shirt",
+      "price": 9.99,
+      "thumbnail": "https://images.pexels.com/photos/6311581/pexels-photo-6311581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "category_id": 21
+    },
+    {
+      "id": 2,
+      "name": "Dog Toy",
+      "price": 4.99,
+      "thumbnail": "https://images.pexels.com/photos/5732445/pexels-photo-5732445.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "category_id": 22
+    },
+    {
+      "id": 3,
+      "name": "Baseball cap",
+      "price": 7.95,
+      "thumbnail": "https://images.pexels.com/photos/1124465/pexels-photo-1124465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "category_id": 21
+    }
+  ],
+  "categories": [
+    { "id": 21, "name": "Fashion" },
+    { "id": 22, "name": "Pets" }
+  ],
+  "rating": [
+    { "id": 31, "product_id": 1, "count": 3, "average": 3 },
+    { "id": 32, "product_id": 2, "count": 23, "average": 4.5 },
+    { "id": 33, "product_id": 3, "count": 12, "average": 3.2 }
+  ]
+}

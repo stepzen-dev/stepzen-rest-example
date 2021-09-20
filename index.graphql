@@ -1,0 +1,3 @@
+schema @sdl(files: ["schema/cart.graphql"]) {
+  query: Query
+}
