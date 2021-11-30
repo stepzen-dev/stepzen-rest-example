@@ -1,4 +1,58 @@
 {
+  "authors": [
+    {
+      "id": 1,
+      "name": "Agatha Christie",
+      "isPseudonym": 0
+    },
+    {
+      "id": 2,
+      "name": "Sir Arthur Conan Doyle",
+      "isPseudonym": 0
+    },
+    {
+      "id": 3,
+      "name": "Edgar Allan Poe",
+      "isPseudonym": 0
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "name": "Murder on the Orient Express",
+      "originalPublishingDate": "1934-01-01",
+      "authorID": 1,
+      "isbn": "9780671523688"
+    },
+    {
+      "id": 2,
+      "name": "The Mysterious Affair at Styles",
+      "originalPublishingDate": "1920-10-01",
+      "authorID": 1,
+      "isbn": "9780812977202"
+    },
+    {
+      "id": 3,
+      "name": "The Adventure of the Three Garridebs",
+      "originalPublishingDate": "1924-10-25",
+      "authorID": 2,
+      "isbn": "9788726586343"
+    },
+    {
+      "id": 4,
+      "name": "The Murders in the Rue Morge",
+      "originalPublishingDate": "1841-04-04",
+      "authorID": 3,
+      "isbn": "9781407021102"
+    }
+  ],
+  "categories": [
+    { "productId": 1, "name": "Fashion" },
+    { "productId": 3, "name": "Fashion" },
+    { "productId": 1, "name": "T-shirts" },
+    { "productId": 3, "name": "Hats" },
+    { "productId": 2, "name": "Pets" }
+  ],
   "products": [
     {
       "id": 1,
@@ -18,13 +72,6 @@
       "price": 7.95,
       "thumbnail": "https://images.pexels.com/photos/1124465/pexels-photo-1124465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     }
-  ],
-  "categories": [
-    { "productId": 1, "name": "Fashion" },
-    { "productId": 3, "name": "Fashion" },
-    { "productId": 1, "name": "T-shirts" },
-    { "productId": 3, "name": "Hats" },
-    { "productId": 2, "name": "Pets" }
   ],
   "rating": [
     { "productId": 1, "count": 3, "average": 3 },
